@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/logins.js" defer></script>
+    <style>
+        form p{
+            color:red;
+            font-size:10px;
+            margin-left:10px;
+            margin-top:-12px;
+        }
+
+        form #main-p{
+            font-size:12px;
+            color:black;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h2>TUTOR EASE</h2>
+        </div>
+        <div class="menu">
+            <a href="" id="">Join us</a>
+        </div>
+    </nav>
+    <div class="section">
+        <div class="sign-image hidden">
+            <img src="../assets/images/imagebg/login-bg1.png" alt="Login Image" />
+        </div>
+        <div class="sign-container hidden">
+            <div class="upper-container">
+                <div class="up">
+                    <a href="" id="up-button">sign-up</a>
+                </div>
+                <div class="in">
+                    <a href="" id="in-button">sign-in</a>
+                </div>
+            </div>
+
+            <div class="lower-container login">
+                <div class="sign-in" id="content1">
+                    <div class="middle">
+                        <div class="form-head"><h2>sign in</h2></div>
+                        <div class="form-container">
+                            <form id="login-form">
+                                <label for="email">E-mail</label><br />
+                                <input
+                                    type="email"
+                                    id="login-email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                    required
+                                /><br />
+                                <p id="login-email-msg"></p>
+                                <label for="password">password</label><br />
+                                <input
+                                    type="password"
+                                    id="login-password"
+                                    name="password"
+                                    placeholder="Password"
+                                    required
+                                /><br />
+                                <p id="login-password-msg"></p>
+                                <p id="login-error-msg"></p>
+                                <p id="main-p">by continue agreeing privacy and terms and conditions</p>
+                                <input type="submit" name="login" value="log in" />
+                            </form>
+                        </div>
+
+                        <div class="lower">
+                            <p>Don't have an account? <a href="#" id="to-signup">Sign up</a></p>
+                            <br />
+                            <p>Forgot Password? <a href="forgot-password.html">Reset</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lower-container logup">
+                <div class="sign-up" id="content2">
+                    <div class="middle">
+                        <div class="form-head"><h2>sign up</h2></div>
+                        <div class="form-container">
+                            <form id="signup-form">
+                                <label for="fname">First Name</label><br />
+                                <input
+                                    type="text"
+                                    id="fname"
+                                    name="fname"
+                                    placeholder="First Name"
+                                /><br />
+                                <p id="fname-msg"></p>
+                                <label for="lname"> Last Name</label><br />
+                                <input
+                                    type="text"
+                                    id="lname"
+                                    name="lname"
+                                    placeholder="Last Name"
+                                /><br />
+                                <p id="lname-msg"></p>
+                                <label for="email">E-mail</label><br />
+                                <input
+                                    type="email"
+                                    id="signup-email"
+                                    name="email"
+                                    placeholder="E-mail"
+                                    required
+                                /><br />
+                                <p id="signup-email-msg"></p>
+                                
+                                <label for="phone">Phone</label><br />
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Your Phone"
+                                    required
+                                /><br />
+                                <p id="phone-msg"></p>
+                                <label for="password">password</label><br />
+                                <input
+                                    type="password"
+                                    id="signup-password"
+                                    name="password"
+                                    placeholder="Password"
+                                    required
+                                /><br />
+                                <p id="signup-password-msg"></p>
+                                <p id="signup-error-msg"></p>
+                                <p id="main-p">by continue agreeing privacy and terms and conditions</p>
+                                <input type="submit" name="signup" value="create account" />
+                            </form>
+                        </div>
+
+                        <div class="lower">
+                            <p>have an account? <a href="#" id="to-signin">Sign in</a></p>
+                            <br />
+                            <p>
+                                Forgot Password? <a href="forgot-password.html">Reset </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
